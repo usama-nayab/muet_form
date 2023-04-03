@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+label , p {font-weight: 600;}
+input{
+    border-radius: 3px;
+    border: 1.5px solid #000;
+    outline: none;
+}
+input[type="file"]{background-color: rgb(51, 209, 244, 0.699); border: none; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;} 
+
+
+
+#td-rs {
+    text-align: center;
+}
+
+#td-rs label {
+    font-weight: 700;
+}
+
+#td-rs input {
+    border-bottom: 1.3px solid black;
+    border-radius: 0px;
+    width: 60%;
+}
+
+/* first row begins */
+.muet-logo img,
+.head-stamp img {
+    width: 80%;
+}
+.head-stamp img{width: 100%;}
+.head-stamp{display: flex; flex-direction: column; align-items: center;}
+.head-stamp input{text-align: center; border: 1px solid #000; width: 100%;}
+.muet-logo,
+.bill-header,
+.head-stamp {
+    margin: 1.5rem 0;
+}
+
+.bill-header {
+    text-align: center;
+}
+
+.bill-header h5 {
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.bill-header .renum {
+    background-color: rgb(51, 208, 244);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 40px;
+}
+
+.bill-header p {
+    text-align: start;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* first row ends */
+
+/* second row begins */
+.examiner-details{margin: 10px 0;}
+.examiner-details input {
+    width: 95%;
+    height: 120px;
+}
+.exam-t-y-b{margin: 10px 0; display: flex; justify-content: space-between;}
+.exam-t-y-b input{width: 20%;  border: 1.5px solid #000; border-radius: 3px; outline: none;}
+
+.conduct-exam , .conduct-prac , .reg-sup{margin: 15px 0;}
+
+.conduct-exam , .conduct-prac{display: flex; justify-content: space-between; align-items: center;}
+
+.reg-sup{display: flex;}
+.reg-sup .reg-exam{margin-right: 20px;}
+
+.ref-and-date{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(233, 236, 236);
+    padding: 5px 0;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.r-d-subject{display: flex; justify-content: space-between; align-items: center; margin: 10px 0;}
+.r-d-subject input{
+    width: 92%;
+}
+
+table td input {
+    border: none;
+    outline: none;
+}
+
+table td,
+table th,
+table tr {
+    font-size: 14px;
+    border: 1.5px solid #000;
+}
+
+.table-headings th{background-color: rgba(51, 209, 244, 0.699)!important;}
+table th{text-align: center;}
+table td{
+    font-weight: 500;
+}
+
+.practical-exam-details input[type="date"]{
+    border: none;
+    border-bottom: 1.5px solid #000;
+    border-radius: 0;
+}
+.practical-exam-details{
+    border-radius: 10px;
+    border: 2px solid #000;
+    padding: 10px 1em;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.chair-dept{text-align: center;}
+.chair-dept input{
+    border: none;
+    border-bottom: 1.5px solid #000;
+    border-radius: 0;
+    width: 87%;
+}
+.sign-of-claimant{text-align: center;}
+.date-details{display: flex;}
+.dates{border: 2px solid #000; border-radius: 10px; padding: 2px 1em; font-size: 15px;}
+.ace-dce-sign{text-align: center; margin-top: 25px;}
+.scripts , .due-date , .awards{
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 0;
+}
+.scripts input , .due-date input , .awards input{
+    border: none;
+    border-bottom: 1.5px solid #000;
+    border-radius: 0;
+}
+
+.verified{margin: 40px 0; font-size: 15px;}
+.verified input{
+    border: none;
+    border-bottom: 1.5px solid #000;
+    border-radius: 0;
+}
+.concerened-sign{text-align: center; margin-top: 20px;}
+.factorum , .director, .dean , .controller{
+    margin: 30px 0;
+    text-align: center;
+}
+.factorum small , .director small, .dean small , .controller small{display: block;}
+/* second row ends */
+
+
+
+/* =======================================RESPONSIVENESS BEGINS====================================== */
+@media screen and (max-width:992px) {
+    .bill-header .renum{font-size: 18px;}
+    .bill-header p{font-size: 14px;}
+    .head-stamp input{font-size: 13px; font-weight: 500;}
+    .exam-t-y-b input{font-size: 11px; font-weight: 500;}
+    .exam-t-y-b label{font-size: 13px !important;}
+    .examiner-details label{font-size: 13px;}
+    .reg-sup{flex-direction: column; justify-content: center; font-size: 13px;}
+    .reg-exam , .sup-exam{display: flex; align-items: center;}
+    .reg-exam input , .sup-exam input{margin-right: 5px;}
+    .conduct-exam , .conduct-prac{font-size: 13px; flex-direction: column; align-items: start;} 
+    .ref-and-date , .r-d-subject{font-size: 12px ;}
+    .details-table{overflow-x: scroll;}
+    .details-table table td , table th{font-size: 10px;}
+    .practical-exam-details , .chair-dept , .sign-of-claimant , .dates ,
+    .verified , .concerened-sign , .ending-signs{font-size: 13px;}
+}
+
+@media screen and (max-width:768px) {
+    input{font-size: 9px !important;}
+    .muet-logo{margin: 10px 0;}
+    .muet-logo img{
+        display: block;
+        width: 20%;
+        margin:  auto;
+    }
+    .bill-header{margin: 0;}
+    .bill-header .renum{font-size: 17px;}
+    .bill-header p{font-size: 13px; text-align: center;}
+    .head-stamp{margin: 0;}
+    .head-stamp-img img{width: 29%; display: block; margin: 0 auto;}
+    .head-stamp input{width: 29%;}
+    .ref-and-date{padding: 6px 8px;}
+    .r-d-subject input{width: 88%;}
+    .details-table table td , table th{font-size: 7px;}
+}
+
+@media screen and (max-width:405px) {
+    .bill-header h5{font-size: 18px;}
+    .bill-header .renum{font-size: 14px;}    
+    .bill-header p{font-size: 12px; margin: 0;}
+    .practical-exam-details , .chair-dept , .sign-of-claimant , .dates ,
+    .verified , .concerened-sign , .ending-signs ,.examiner-details label,
+    .exam-t-y-b label, .exam-t-y-b input, .reg-sup , .conduct-exam, .conduct-prac,
+    .ref-and-date, .r-d-subject
+    {font-size: 11px !important;}
+    .r-d-subject input{width: 85%;}
+}
+
+@media screen and (max-width:345px) {
+    .bill-header h5{font-size: 13px;}
+    .bill-header .renum{font-size: 12px;}
+    .bill-header p{font-size: 10px;}  
+    .practical-exam-details , .chair-dept , .sign-of-claimant , .dates ,
+    .verified , .concerened-sign , .ending-signs ,.examiner-details label,
+    .exam-t-y-b label, .exam-t-y-b input, .reg-sup , .conduct-exam, .conduct-prac,
+    .ref-and-date, .r-d-subject
+    {font-size: 10px !important;}  
+}
+/* =======================================RESPONSIVENESS ENDS======================================== */
